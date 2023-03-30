@@ -1,0 +1,45 @@
+/* html {
+  font-size: 62.5%;
+} */
+
+.payment_section {
+  /* background-color: aquamarine; */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 670px;
+}
+.myfontColor {
+  color: #231e1e9c !important;
+}
+hr {
+  border: 1.4px solid black !important;
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 575px) {
+  .payment_section {
+    max-width: 100%;
+  }
+  .myfontColor {
+    padding-left: 0px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .payment_section {
+    max-width: 100%;
+  }
+  .myfontColor {
+    padding-left: 0px;
+  }
+  .container {
+    max-width: 580px !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .payment_section {
+    max-width: 100%;
+  }
+  .myfontColor {
+    padding-left: 0px;
+  }
+}
