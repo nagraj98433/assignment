@@ -19,4 +19,8 @@ code {
   align-items: center;
   font-weight: bold;
   color: white;
+  flex-direction: column;
+}
+.home h2 {
+  border: 2px solid purple;
 }

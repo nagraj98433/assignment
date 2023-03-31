@@ -1,0 +1,42 @@
+.btn-outline-primary {
+  border-color: #007bb8 !important;
+  border-width: 2px !important;
+}
+
+.btn {
+  padding: 15px 21px !important;
+  color: #2a7fa9 !important;
+  background-color: #e8f6ff !important;
+}
+
+div > span .MuiSvgIcon-root {
+  display: block;
+}
+
+/* .activeClass {
+  display: block;
+  padding: 15px 21px !important;
+  color: #2a7fa9 !important;
+  background-color: #e8f6ff !important;
+  border-color: #007bb8 !important;
+  border-width: 2px !important;
+} */
+
+/* AMount section start */
+
+.onHover1 {
+  background-color: #007cba;
+  color: white;
+  font-weight: 600;
+}
+.onHover2 {
+  background-color: #e8f6ff;
+  border-left: 2px solid #007bb8;
+  border-right: 2px solid #007bb8;
+}
+.borderLast {
+  border-bottom: 2px solid #007bb8;
+  font-weight: bold;
+}
+
+/* AMount section end */
