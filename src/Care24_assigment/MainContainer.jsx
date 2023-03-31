@@ -162,39 +162,32 @@ function MainContainer() {
             <div className="col-3 myWidth">
               {isActive ? <button type="button" onClick={setStyle} className="btn btn-outline-primary position-relative fw-bold">
                 7 Days
-                <span className="position-absolute top-0 left-0 start-100 translate-middle badge">
-                  <CheckCircleOutlineIcon />
-                </span>
               </button> : <button type="button" onClick={setStyle} className="btnn btn-outline border border-2 border-primary border-opacity-50 position-relative fw-bold">
                 7 Days
                 <span className="position-absolute top-0 left-0 start-100 translate-middle badge">
-                  <CheckCircleOutlineIcon />
+                  {isActive ? 'h' : <CheckCircleOutlineIcon />}
                 </span>
               </button>}
             </div>
             <div className="col-3 text-end myWidth center">
               {isActive2 ? <button type="button" onClick={setStyle2} className="btn btn-outline-primary position-relative fw-bold">
                 15 Days
-                <span className="position-absolute top-0 left-0 start-100 translate-middle badge">
-                  <CheckCircleOutlineIcon />
-                </span>
+
               </button> : <button type="button" onClick={setStyle2} className="btnn btn-outline border-2 border-primary border-opacity-50 position-relative fw-bold">
                 15 Days
                 <span className="position-absolute top-0 left-0 start-100 translate-middle badge">
-                  <CheckCircleOutlineIcon />
+                  {isActive2 ? 'h' : <CheckCircleOutlineIcon />}
                 </span>
               </button>}
             </div>
             <div className="col-3 text-end myWidth">
               {isActive3 ? <button type="button" onClick={setStyle3} className="btn btn-outline-primary position-relative fw-bold">
                 30 Days
-                <span className="position-absolute top-0 left-0 start-100 translate-middle badge">
-                  <CheckCircleOutlineIcon />
-                </span>
+
               </button> : <button type="button" onClick={setStyle3} className="btnn px-0 btn-outline border-2 border-primary border-opacity-50 position-relative fw-bold">
                 30 Days
                 <span className="position-absolute top-0 left-0 start-100 translate-middle badge">
-                  <CheckCircleOutlineIcon />
+                  {isActive3 ? 'h' : <CheckCircleOutlineIcon />}
                 </span>
               </button>}
             </div>

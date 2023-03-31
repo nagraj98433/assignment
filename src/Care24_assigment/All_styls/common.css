@@ -11,7 +11,7 @@
 }
 
 div > span .MuiSvgIcon-root {
-  display: block;
+  display: block !important;
 }
 
 @media screen and (min-width: 360px) and (max-width: 410px) {
