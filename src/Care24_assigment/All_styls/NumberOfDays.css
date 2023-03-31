@@ -1,7 +1,7 @@
 span .MuiSvgIcon-root {
   width: 20px !important;
   color: #007bb8 !important ;
-  display: none;
+  /* display: none; */
 }
 .translate-middle {
   transform: translate(-50%, -42%) !important;
