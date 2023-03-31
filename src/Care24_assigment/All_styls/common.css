@@ -3,14 +3,22 @@
   border-width: 2px !important;
 }
 
-.btn {
+.btnn {
   padding: 15px 21px !important;
   color: #2a7fa9 !important;
   background-color: #e8f6ff !important;
+  border-radius: 5px;
 }
 
 div > span .MuiSvgIcon-root {
   display: block;
+}
+
+@media screen and (min-width: 360px) and (max-width: 410px) {
+  .btnn {
+    /* padding: 17px 16px !important; */
+    padding: 15px 19px !important;
+  }
 }
 
 /* .activeClass {
@@ -21,22 +29,3 @@ div > span .MuiSvgIcon-root {
   border-color: #007bb8 !important;
   border-width: 2px !important;
 } */
-
-/* AMount section start */
-
-.onHover1 {
-  background-color: #007cba;
-  color: white;
-  font-weight: 600;
-}
-.onHover2 {
-  background-color: #e8f6ff;
-  border-left: 2px solid #007bb8;
-  border-right: 2px solid #007bb8;
-}
-.borderLast {
-  border-bottom: 2px solid #007bb8;
-  font-weight: bold;
-}
-
-/* AMount section end */

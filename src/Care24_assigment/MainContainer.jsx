@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 // import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import '../Care24_assigment/All_styls/paymentSec.css'
-// import './All_styls/common.css'
+import './All_styls/common.css'
 
 // import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 import HeaderWitIconPay from './Header_wit_icon_pay/HeaderWitIconPay'
@@ -44,6 +44,7 @@ function MainContainer() {
     setisActive(isActive = true)
     setisActive2(isActive2 = true)
   }
+
 
 
 
@@ -159,28 +160,43 @@ function MainContainer() {
         <div className="container mt-4">
           <div className="row justify-content-between mx-1">
             <div className="col-3 myWidth">
-              <button type="button" onClick={setStyle} className="btn btn-outline-primary position-relative fw-bold">
+              {isActive ? <button type="button" onClick={setStyle} className="btn btn-outline-primary position-relative fw-bold">
                 7 Days
                 <span className="position-absolute top-0 left-0 start-100 translate-middle badge">
                   <CheckCircleOutlineIcon />
                 </span>
-              </button>
+              </button> : <button type="button" onClick={setStyle} className="btnn btn-outline border border-2 border-primary border-opacity-50 position-relative fw-bold">
+                7 Days
+                <span className="position-absolute top-0 left-0 start-100 translate-middle badge">
+                  <CheckCircleOutlineIcon />
+                </span>
+              </button>}
             </div>
             <div className="col-3 text-end myWidth center">
-              <button type="button" onClick={setStyle2} className="btn btn-outline-primary position-relative fw-bold">
+              {isActive2 ? <button type="button" onClick={setStyle2} className="btn btn-outline-primary position-relative fw-bold">
                 15 Days
                 <span className="position-absolute top-0 left-0 start-100 translate-middle badge">
                   <CheckCircleOutlineIcon />
                 </span>
-              </button>
+              </button> : <button type="button" onClick={setStyle2} className="btnn btn-outline border-2 border-primary border-opacity-50 position-relative fw-bold">
+                15 Days
+                <span className="position-absolute top-0 left-0 start-100 translate-middle badge">
+                  <CheckCircleOutlineIcon />
+                </span>
+              </button>}
             </div>
             <div className="col-3 text-end myWidth">
-              <button type="button" onClick={setStyle3} className="btn btn-outline-primary position-relative fw-bold">
+              {isActive3 ? <button type="button" onClick={setStyle3} className="btn btn-outline-primary position-relative fw-bold">
                 30 Days
                 <span className="position-absolute top-0 left-0 start-100 translate-middle badge">
                   <CheckCircleOutlineIcon />
                 </span>
-              </button>
+              </button> : <button type="button" onClick={setStyle3} className="btnn px-0 btn-outline border-2 border-primary border-opacity-50 position-relative fw-bold">
+                30 Days
+                <span className="position-absolute top-0 left-0 start-100 translate-middle badge">
+                  <CheckCircleOutlineIcon />
+                </span>
+              </button>}
             </div>
           </div>
         </div>
